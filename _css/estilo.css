@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bolder;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../_imagens/banner.jpg');
+}
+
+:root{
+    --spacing: 5px;
+    --gallery-bottom-padding: 0px;
+}
+
+/*
+Inicio CSS HEADER
+*/
+header{
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    background: linear-gradient(80deg,  #cee4f2  12.6%,  #f2c284 53.5%,  #efefed 75.6%);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272; 
+    transition: 1s;
+}
+nav .active a, 
+nav a:hover{
+    background-color: #39aae1;
+    color: #fff;
+}
+/*
+FIM CSS HEADER
+*/
+
+
+
+/*
+Inicio CSS MAIN
+*/
+.sessao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    border-top: 2px solid #000;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: 1500px;
+}
+.conteudo{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+.cont_conteudo{
+    height: 400px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: justify;
+    font-family: 'Fuzzy Bubbles', cursive;
+    align-items: center;
+}
+.box_title{
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+.box_information{
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: normal;
+}
+.box_doacoes{
+    width: 340px;
+}
+#box_doacoes_transf{
+    width: 320px;
+}
+#conta_banc1{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+#conta_banc2{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.sessao_2{
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #000;
+    
+}
+#sessao_doação{
+    height: 850px;
+}
+#volunt{
+    text-decoration: none;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+#volunt:hover{
+    text-decoration: underline;
+}
+.galeria{
+    display: grid;
+    height: 500px;
+}
+.galeria_imagens{
+    display: flex;
+    height: 135px;
+    flex-direction: row;
+    gap: 4px;
+    margin-top: 5px;
+
+}
+
+/*
+FIM CSS MAIN
+*/
+
+
+/*
+INCIO CSS FOOTER
+*/
+footer{
+    background: linear-gradient(80deg, #f2c284 12.6%,#cee4f2 53.5% ,#efefed 75.6%);
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    border-top: 2px solid #000;
+    position: relative;
+    bottom: 0%;
+}
+.cont_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+#logo_footer{
+    position: relative;
+    top: 5px;
+    display: flex;
+    gap: 25px;
+}
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+.cont_email{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.icone_email{
+    display: flex;
+    height: 18px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.box:hover{
+    width: 155px;
+    background: #c32aa3;
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px #b315917c;
+}
+.navbar p{
+    transform: translate(60px);
+}
+.box .icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .4s ease;
+}
+.instagram{
+    background-color: #c32aa3;
+}
+.box:hover .icon{
+    background: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 20px rgba(0,0,0,0.26);
+}
+/*
+FIM CSS FOOTER
+*/
+
+
+@media (max-width: 375px) {
+    .menu_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 11.5px;
+    }
+    .cont_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }.box{
+        width: 35px;
+        height: 35px;
+        margin: 3px;
+    }.navbar p{
+        font-size: 11.5px;
+    }.box:hover{
+        width: 115px;
+    } 
+    
+}

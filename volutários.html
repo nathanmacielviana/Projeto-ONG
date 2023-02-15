@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <title>Document</title>
+    <link rel="icon" href="_imagens/LogoSite.png">
+</head>
+<body class="site">
+    <header class="cabecalho">
+            <img class="menu-logo-site" src="_imagens/LogoSite.png" alt="" class="logodosite">
+            <div class="menu">
+            <nav class="menu-nave">
+                    <button class="menu-nave-botao"><a class="menu-nave-item" href="home.html">Home</a></button>
+                    <button class="menu-nave-botao"><a class="menu-nave-item" href="Quem_somos.html">Quem Somos</a></button>
+                    <button class="menu-nave-botao"><a class="menu-nave-item" href="adoção.html">Adoção</a></button>
+                    <button class="menu-nave-botao"><a class="menu-nave-item" href="contato.html">Contato</a></button>
+                    <button class="menu-nave-botao"><a class="menu-nave-item" href="volutários.html">Volutários</a></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="conteudo">
+        </section>
+    </main>
+
+    <h1>Voluntarie-se</h1>
+
+     <!--nome-->
+     <fieldset>
+        <div class="campo">
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" style="width: 20em" required>   
+        </div> 
+
+        <!---Sexo--->
+        <div class="campo">
+                <label class="checkbox">
+                <input type="radio" name="sexo" value="masculino">Masculino</label>
+                <label class= "checkbox">
+                <input type="radio" name="sexo"value="feminino">Feminino</label></br>
+                <br>
+                </div>
+
+                <!---Data nascimento-->
+            <fieldset>
+            <div class="campo">
+            <label>Data de nascimento:</label>
+            <input type="date" id="datanasc" name="datanasc" placeholder="Digite sua data de nascimento:" style="width: 20em" required>   
+            </div>
+
+        <!--Email-->
+        <div class="campo">
+            <label>Email:</label>
+            <input type="text" placeholder="Digite o seu Email" style="width: 20em;" required>
+            <div class="campo">
+            </br>
+            <br>
+
+            <!--Telefone-->
+            <label for="telefone">Telefone</label>
+         <input type="tel" id="telefone" class="input-padrao" required placeholder="">
+
+         <!---Endereço-->
+
+     <fieldset>
+        <div class="campo">
+            <label>Endereço:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu endereço" style="width: 20em" required>   
+        </div> 
+
+        <!--CEP-->
+     <fieldset>
+        <div class="campo">
+            <label>CEP:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu CEP" style="width: 20em" required>   
+        </div> 
+
+        <!--Bairro-->
+        <fieldset>
+            <div class="campo">
+                <label>Bairro:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu Bairro" style="width: 20em" required>   
+            </div> 
+
+
+            <!--Caixa de mensagens-->
+        <div class="campo">
+        <label>Mensagem</label>
+        <textarea name="message"style="width:40em"placeholder="Algum comentario extra?"></textarea>
+        </br>
+        <br>
+       </div>
+
+            <!--Newsletter-->
+      <div class="campo">
+    <label>Newsletter</label>
+    <label class="checkbox">
+    <input type="checkbox"name="newsletter"value="1">Gostaria de ficar por dentro de nossas novidades?</label>
+    </br>
+
+    <!--Sumbit-->
+      <button class="botaosubmit"type="submit"name="submit">Submit</button>
+      </div>
+    </fieldset>
+
+
+        </div>
+
+
+    <footer class="rodape">
+        <section>
+            <picture>
+                <img class="rodape-logo-site"  src="_imagens/LogoSite.png" alt="">
+            </picture>
+            <div class="navbar">
+                <div class="box">
+                    <div class="icon Instagram">
+                        <a href="https://www.instagram.com/bichoderuaceara/?next=%2F" target="_blank" style="color: #8E24AA;"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                    <a href="https://www.instagram.com/bichoderuaceara/?next=%2F" target="_blank" style="text-decoration: none; color: white;">
+                        <p class="nome-icon">Instagram</p> 
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cont">
+            <div class="cont_email">
+                <h2  style="text-align: center;">
+                <picture>
+                    <img src="_imagens/icone_email.png" alt="" id="icon_email" >
+                </picture>
+                    Projetobichoderua@gmail.com
+                </h2>
+            </div>
+            <div class="cont_tel">
+                <h2 style="text-align: center;">
+                    <picture>
+                        <img src="_imagens/icone_tel.png" alt="" id="icon_tel">
+                    </picture>
+                    Tel:(85) 997444969
+                </h2>
+            </div>    
+        </div>
+    </section>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
